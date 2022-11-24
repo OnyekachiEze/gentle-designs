@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gentle Designs</title>
+    <style>
+       * {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: purple;
+  color: gold;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  display: -webkit-flex;
+  margin-left: 100px;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 9px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+    </style>
+</head>
+<body>
+    <!-- Note -->
+<div style="background:yellow;padding:5px">
+    <h4 style="text-align:center">Gentle Designs</h4>
+  </div>
+  
+  <!-- Header -->
+  <div class="header">
+    <h1>Get your Latest Designs here</h1>
+    <p>With cheap and<b> affordable</b> Prices </p>
+  </div>
+  
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="#">Men's cloths</a>
+    <a href="#">Men's Assesories</a>
+    <a href="#">Ladies cloths</a>
+    <a href="#">Ladies Assesories</a>
+  </div>
+  
+  <div class="row">
+    <div class="side">
+      <h2>Gentle Designs</h2>
+      <h5>mens cloths</h5>
+      <br>
+      <img src="/mens cloth/download (1).jpg" alt="" style="width: 300px; position:relative; bottom: 10px; margin-right: 40px;">
+      <br>
+      <p>We are sure you love our latest mens cloths</p>
+      <h3>You can see some of our designs here</h3>
+      <p>Designers</p>
+      <br>
+      <img src="/mens cloth/download (2).jpg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+      <br>
+      <p>Another design</p>
+      <br>
+      <img src="/mens cloth/download (3).jpg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+      <br>
+      <p>We also sell mens jeans</p>
+      <br>
+      <img src="/jeans2.jpg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+    </div>
+
+    <div class="main">
+        <h2>WE started our business with small and now we have grown</h2>
+        <h5>year started, september 7, 2019</h5>
+        <img src="mens cloth/images.jpg" alt="" style="width: 350px; height: 300px; position:relative; bottom: 20px; margin-right: 40px;">
+        <p>here are more designs</p>
+        <p>WE do refunds after 24hours</p>
+        <br>
+        <h2>Mens clothes</h2>
+        <h5>We started selling mens clothes, september 9, 2019</h5>
+        <img src="/people2.jpg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+        <p>Come to Gentle Designs to See your latest and finest Designs. We dont give Fakes</p>
+        <br>
+        <img src="/mens cloth/downloadf.jpg" alt="">
+        <hr>
+        <img src="/mens cloth/images (2).jpg" alt="">
+        <img src="/mens cloth/download (3).jpg" alt="">
+    
+    </div>
+    </div>
+
+</body>
+</html>
