@@ -16,6 +16,35 @@ body {
   margin: 0;
 }
 
+h1 {
+  background-color: grey;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+  text-align: center;
+}
+
+button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: red;
+}
+
 /* Header/logo Title */
 .header {
   padding: 60px;
@@ -82,6 +111,23 @@ body {
   .row, .navbar {   
     flex-direction: column;
   }
+  
+  button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 200px;
+  font-size: 18px;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+  margin-right: 200px;
+}
 }
     </style>
 </head>
@@ -99,7 +145,7 @@ body {
   
   <!-- Navigation Bar -->
   <div class="navbar">
-    <a href="#">Men's cloths</a>
+    <a href="#" style="background-color: red;">Men's cloths</a>
     <a href="#">Men's Assesories</a>
     <a href="#">Ladies cloths</a>
     <a href="#">Ladies Assesories</a>
@@ -108,41 +154,68 @@ body {
   <div class="row">
     <div class="side">
       <h2>Gentle Designs</h2>
-      <h5>mens cloths</h5>
+      <h1>mens cloths</h1>
+      <br><br>
+      <img src="/mens cloth/download (1).jpg" alt="" style="width: 280px; position:relative; bottom: 20px; margin-right: 40px;">
+      <p class="price">$21.99</p>
+      <button>BUY NOW</button>
       <br>
-      <img src="/mens cloth/download (1).jpg" alt="" style="width: 300px; position:relative; bottom: 10px; margin-right: 40px;">
-      <br>
+
       <p>We are sure you love our latest mens cloths</p>
       <h3>You can see some of our designs here</h3>
       <p>Designers</p>
       <br>
+
       <img src="/mens cloth/download (2).jpg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+      <p class="price">$21.99</p>
+      <button>BUY NOW</button>
       <br>
+
+
       <p>Another design</p>
       <br>
       <img src="/mens cloth/download (3).jpg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+      <p class="price">$29.99</p>
+      <button>BUY NOW</button>
       <br>
+
+
       <p>We also sell mens jeans</p>
       <br>
       <img src="/jeans2.jpg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+      <p class="price">$Nogiatable</p>
+      <button>BUY NOW</button>
     </div>
 
     <div class="main">
         <h2>WE started our business with small and now we have grown</h2>
         <h5>year started, september 7, 2019</h5>
         <img src="mens cloth/images.jpg" alt="" style="width: 350px; height: 300px; position:relative; bottom: 20px; margin-right: 40px;">
-        <p>here are more designs</p>
-        <p>WE do refunds after 24hours</p>
+        <p class="price">$32.99 <del>$22.3</del></p>
+      <button>BUY NOW</button>
+         <strong>here have more designs <br> WE do refunds before 48hours</strong> 
+        
         <br>
         <h2>Mens clothes</h2>
         <h5>We started selling mens clothes, september 9, 2019</h5>
         <img src="/people2.jpg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+        <p class="price">$9.99</p>
+        <button>BUY NOW</button> 
+
         <p>Come to Gentle Designs to See your latest and finest Designs. We dont give Fakes</p>
         <br>
         <img src="/mens cloth/downloadf.jpg" alt="">
+        <p class="price">$21.99</p>
+        <button>BUY NOW</button>
         <hr>
         <img src="/mens cloth/images (2).jpg" alt="">
+        <p class="price">$13.99</p>
+        <button>BUY NOW</button>
+        <hr>
+        <br>
         <img src="/mens cloth/download (3).jpg" alt="">
+        <p class="price">$21.99</p>
+        <button>BUY NOW</button>
     
     </div>
     </div>

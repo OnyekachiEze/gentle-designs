@@ -16,6 +16,28 @@ body {
   margin: 0;
 }
 
+.price {
+  color: grey;
+  font-size: 22px;
+  text-align: center;
+}
+
+button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: red;
+}
+
 /* Header/logo Title */
 .header {
   padding: 60px;
@@ -70,11 +92,48 @@ body {
 
 /* Footer */
 .footer {
-  padding: 20px;
+  position: fixed;
+  left:0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
   background: #ddd;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  letter-spacing: 9px;
+  letter-spacing: 19px;
+}
+
+.callout {
+  position: fixed;
+  bottom: 80px;
+  right: 0px;
+  margin-left: 20px;
+  max-width: 300px;
+}
+
+.callout-header {
+  padding: 25px 15px;
+  background: #555;
+  font-size: 30px;
+  color: white;
+}
+
+.callout-container {
+  padding: 15px;
+  background-color: #ccc;
+  color: black
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: lightgrey;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -86,6 +145,13 @@ body {
 </style>
 </head>
 <body>
+  <div class="callout">
+    <div class="callout-header">Gentle Designs</div>
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+    <div class="callout-container">
+      <p>Feel free to ask for discount<a href="#"> Learn more</a> or more product</p>
+    </div>
+  </div>
 
 <!-- Note -->
 <div style="background:yellow;padding:5px">
@@ -110,34 +176,60 @@ body {
 <div class="row">
   <div class="side">
     <h2>About Gentle Designs</h2>
-    <h5>display</h5>
+    <h5>display hairstyle</h5>
     <br>
     <img src="/avatar_g2.jpg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+    <p class="price">$19.99</p>
+    <button>BUY NOW</button>
     <br>
+
+
     <p>Am a fashion disigner and also a photographer</p>
     <h3>You can see some of our designs here</h3>
-    <p>Designers</p>
+    <p>Designers shirt and hand bag</p>
     <br>
     <img src="/girl_train.jpg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+    <p class="price">$9.99</p>
+    <button>BUY NOW</button>
     <br>
+
+
     <p>We sell ladies jeans</p>
     <br>
     <img src="/jeans1.jpg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+    <p class="price">$4.99</p>
+    <button>BUY NOW</button>
     <br>
+
+
     <p>We also sell mens jeans</p>
     <br>
     <img src="/jeans2.jpg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+    <p class="price">$16.99</p>
+    <button>BUY NOW</button>
+
+
   </div>  
   <div class="main">
     <h2>WE started our business with small and now we have grown</h2>
     <h5>year started, september 7, 2019</h5>
     <img src="/jeans3.jpg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+    <p class="price">$19.99</p>
+    <button>BUY NOW</button>
+    <br>
+
+
     <p>here are more designs</p>
     <p>we do give refunds if you dont like the clothes sold to you</p>
     <br>
     <h2>Mens clothes</h2>
     <h5>We started selling mens clothes, september 9, 2019</h5>
     <img src="/people2.jpg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+    <p class="price">$6.99</p>
+    <button>BUY NOW</button>
+    <br>
+
+    
     <p>Come to Gentle Designs to See your latest and finest Designs. We dont give Fakes</p>
   </div>
 </div>
