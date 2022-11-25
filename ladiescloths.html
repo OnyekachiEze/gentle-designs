@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+h1 {
+  background-color: grey;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+  text-align: center;
+}
+
+button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: red;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: purple;
+  color: gold;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  display: -webkit-flex;
+  margin-left: 100px;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 9px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+  
+  button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 200px;
+  font-size: 18px;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+  margin-right: 200px;
+}
+}
+    </style>
+</head>
+<body>
+    <!-- Note -->
+<div style="background:yellow;padding:5px">
+    <h4 style="text-align:center">Gentle Designs</h4>
+  </div>
+  
+  <!-- Header -->
+  <div class="header">
+    <h1>Get your Latest Designs here</h1>
+    <p>With cheap and<b> affordable</b> Prices </p>
+  </div>
+  
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="menscloth.html">Men's cloths</a>
+    <a href="#">Men's Accesories</a>
+    <a href="#" style="background-color: red;">Ladies cloths</a>
+    <a href="#">Ladies Assesories</a>
+  </div>
+    
+</body>
+</html>
