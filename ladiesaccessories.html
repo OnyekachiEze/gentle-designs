@@ -15,6 +15,28 @@ body {
   font-family: Arial;
   margin: 0;
 }
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid pink;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 h1 {
   background-color: grey;
@@ -150,7 +172,105 @@ button:hover {
     <a href="ladiescloths.html">Ladies cloths</a>
     <a href="#" style="background-color: rgb(148, 24, 24);">Ladies Assesories</a>
   </div>
+
+  <!-- Slide Show -->
+
+  <div class="row">
+    <div class="side">
+      <h2>Gentle Designs</h2>
+      <h1>Ladies Accesories</h1>
+      <h3>You can see some of our designs here</h3>
+      <p>Ladies Designers Caps</p>
+      <hr>
+      <h1>Cap</h1>
+      <br><br>
+      <img src="/women accesories/women bags/cap.webp" alt="" style="width: 280px; position:relative; bottom: 20px; margin-right: 40px;">
+      <p class="price">$2.00</p>
+      <button>BUY NOW</button>
+      <br>
+
+      <p>We are sure you love our latest Ladies Caps</p>
+      <br>
+
+      <img src="/women accesories/women bags/cap2.webp" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+      <p class="price">$2.99</p>
+      <button>BUY NOW</button>
+      <br><br>
+      <hr>
+      <h1>Hand Bags</h1>
+      <br>
+      <img src="/women accesories/women bags/images (1).jpg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+      <img src="/women accesories/women bags/images (2).jpg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+      <p class="price">$5.99</p>
+      <button>BUY NOW</button>
+      <br><br>
+      <img src="/women accesories/women bags/images.jpg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+      <p class="price">$9.99</p>
+      <button>BUY NOW</button>
+      <br><br><br>
+      <img src="/women accesories/women bags/O1CN014Yhqvl1wgOSOTkVDs__615786337_grande.webp" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+      <p class="price">$8.99</p>
+      <button>BUY NOW</button>
+      <br><br><br>
+      <img src="/women accesories/women bags/valentino-bags-1.jpeg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+      <img src="/women accesories/women bags/valentino-bags-2.jpeg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+      <p class="price">$14.99</p>
+      <button>BUY NOW</button>
+    </div>
   
+    <div class="main">
+      <h2>WE give you our awesome makeup equipments</h2>
+      <h1></h1>
+      <br><br>
+      <img src="/women accesories/women bags/322952-01.jpg" alt="" style="width: 350px; height: 300px; position:relative; bottom: 20px; margin-right: 40px;">
+      <img src="" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+      <p class="price">$7.99</p>
+    <button>BUY NOW</button>
+       <strong>here have more designs<br> WE do refunds before 48hours</strong> 
+      <br><br>
+      <img src="/women accesories/women bags/b4a23d5b1db3412c965c206094a87bf8.webp" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+      <p class="price">$12.99</p>
+      <button>BUY NOW</button> 
+
+      <p>Come to Gentle Designs to See your latest and finest Designs. We dont give Fakes</p>
+      <br>
+      <img src="/women accesories/women bags/images (5).jpg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+      <p class="price">$21.99</p>
+      <button>BUY NOW</button>
+      <br><br><br>
+      <hr>
+      <img src="/women accesories/women bags/download.jpg" alt=""style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+      <p class="price">$13.99</p>
+      <button>BUY NOW</button>
+      <hr>
+      <br>
+      <img src="/women accesories/women bags/images (4).jpg" alt="" style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+      <p class="price">$21.99</p>
+      <button>BUY NOW</button>
+      <br><br><br>
+      <hr>
+      <img src="/women accesories/women bags/images (3).jpg" alt=""style="width: 200px; position:relative; bottom: 20px; margin-right: 40px;">
+      <p class="price">$10.99</p>
+      <button>BUY NOW</button>
+  
+  </div>
+  </div>
+  <script>
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
     
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+    </script>
 </body>
 </html>

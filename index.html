@@ -173,6 +173,13 @@ button:hover {
   <a href="ladiesaccessories.html">Ladies Assesories</a>
 </div>
 
+<section>
+  <img class="mySlides" src="/men accesories/chain/gold.webp"style="width:1000px; height:250px;">
+  <img class="mySlides" src="/women accesories/women bags/valentino-bags-1.jpeg"style="width:1000px; height:250px;">
+  <img class="mySlides" src="/men accesories/belt/beltt.webp" style="width:1000px; height:250px;">
+  <img class="mySlides" src="/women accesories/women bags/download.jpg" style="width:1000px; height:250px;">
+</section>
+
 <!-- The flexible grid (content) -->
 <div class="row">
   <div class="side">
@@ -255,5 +262,22 @@ button:hover {
 <div class="footer">
   <h2>Gentle Designs</h2>
 </div>
-</body>
+<script>
+  // Automatic Slideshow - change image every 3 seconds
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+  }
+  </script>
+  </body>
 </html>
